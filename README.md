@@ -25,51 +25,51 @@ Regular Expressions listed in order of execution.
 ## RegEx
 ```Python
 ### 1.
-#REMOVE EXTRA 15-CHARACTER ID LINE (#)###############
+# REMOVE EXTRA 15-CHARACTER ID LINE (#)###############
 #[0-9]{15}
-#REPLACE WITH: 
+# REPLACE WITH: 
 <blank>'
 
 ### 2.
-#REMOVE ALL EMPTY\BLANK LINES
+# REMOVE ALL EMPTY\BLANK LINES
 ^(?:[\t ]*(?:\r?\n|\r))+
-#REPLACE WITH:
+# REPLACE WITH:
 <blank>
 
 ### 3.
-#ADD YEAR TO THE DATE: MM/DD(/YYYY)
+# ADD YEAR TO THE DATE: MM/DD(/YYYY)
 ([0-9]{2}/[0-9]{2}).*?
-#REPLACE WITH:
+# REPLACE WITH:
 $0/####
 
 ### 4.
-#CONVERT DATE MM/DD/YYYY TO YYYY/MM/DD
+# CONVERT DATE MM/DD/YYYY TO YYYY/MM/DD
 ([0-9]{2})/([0-9]{2})/([0-9]{4})
-#REPLACE WITH:
+# REPLACE WITH:
 $3/$1/$2,
 
 ### 5. 
-#COMBINE 4 LINES
+# COMBINE 4 LINES
 (?-s)^(.+)\R(.+)\R(.+)\R(.+)\R*
-#REPLACE WITH:
+# REPLACE WITH:
 \1, \2, \3, \4 \n
 
 ### 6.
-#FIND [US] AND DELETE
+# FIND [US] AND DELETE
  (US,\s{1})
-REPLACE WITH:
+# REPLACE WITH:
 <blank>
 
 ### 7.
-#REMOVE LINES WITH THE WORDS "ATM", "DEPOSIT" etc...
+# REMOVE LINES WITH THE WORDS "ATM", "DEPOSIT" etc...
 ((^.*Deposit.*$)|(^.*ATM.*$)|(^.*Payroll.*$)|(^.*Transfer.*$)|(^.*Interest.*$)|(^.*Beginning.*$))
-#REPLACE WITH:
+# REPLACE WITH:
 <blank>
 
 ### 8.
-#REMOVE ALL EMPTY\BLANK LINES
+# REMOVE ALL EMPTY\BLANK LINES
 ^(?:[\t ]*(?:\r?\n|\r))+
-#REPLACE WITH:
+# REPLACE WITH:
 <blank>
 
 
