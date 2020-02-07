@@ -14,7 +14,7 @@
 
 ## About-Process
 
-<p>Basic Regular Expression Script Logic to apply to modified .PDF exported text which is copied from edited .PDF to text editor.  In this example the text editor of choice is [Sublime Text 3]
+<p>Basic Regular Expression Script Logic to apply to modified .PDF exported text which is copied from edited .PDF to text editor.  In this example the text editor of choice is [Sublime Text 3] and Sample Data Zip of Visa non-PII Samples API.
 
 Remember to always set your text editor to use Regular Expressions before proceeding.
 Regular Expressions listed in order of execution.
