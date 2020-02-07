@@ -75,6 +75,45 @@ $3/$1/$2,
 
 ```
 
+## Exported Sample Results 
+
+| Date | Currency | Merchant | State | Cost | Balance |
+|----------|--------------------------------------------|----------------------------------------|----|----------|----------| 
+2012/09/29	|Visa Check Card Point of Sale Purchase	|MACY'S 023 8000 TY MCLEAN	|VA	|$20.71	|$398.77|
+2012/09/29	|Visa Check Card Point of Sale Purchase	|TARGET T1416 SPRINGFIEL SPRINGFIELD	|VA	|$94.30	|$304.47|
+2012/09/30	|Visa Check Card Point of Sale Purchase	|JCPENNEY STORE 1462 SPRINGFIELD	|VA	|$63.00	|$241.47|
+2012/09/30	|Visa Check Card Point of Sale Purchase	|TARGET T1416 TARGET T14 SPRINGFIELD	|VA	|$9.23	|$232.24|
+2012/10/01	|Visa Check Card Purchase	|PANERA BREAD #0118ALEXANDRIA	|VA	|$4.50	|$227.74|
+2012/10/01	|Visa Check Card Point of Sale Purchase	|THE VITAMIN SHOPPE 137 SPRINGFIELD	|VA	|$40.92	|$186.82|
+2012/10/02	|Visa Check Card Purchase	|OUTBACK 4713 SPRINGFIELD	|VA	|$52.20	|$134.62|
+2012/10/03	|Visa Check Card Purchase	|SUBWAY 0331FALLS CHURCH	|VA	|$9.29	|$125.33|
+2012/10/03	|Visa Check Card Purchase	|PANERA BREAD #0118ALEXANDRIA	|VA	|$3.40	|$121.93|
+2012/10/04	|Visa Check Card Purchase	|SUBWAY 0331FALLS CHURCH	|VA	|$9.29	|$112.64|
+2012/10/06	|Visa Check Card Point of Sale Purchase	|SHELL Service Station S ALEXANDRIA	|VA	|$49.56	|$63.08|
+2012/10/07	|Visa Check Card Purchase	|SUBWAY 0001ARLINGTON	|VA	|$9.37	|$53.71|
+2012/10/08	|Visa Check Card Point of Sale Purchase	|WEGMANS 14801 DINING WA WOODBRIDGE	|VA	|$8.87	|$44.84|
+2012/10/11	|Visa Check Card Purchase	|SUBWAY 0331FALLS CHURCH	|VA	|$9.56	|$35.28|
+2012/10/11	|Visa Check Card Purchase	|MOE'S SW GRILL 244FALLS CHURCH	|VA	|$9.74	|$25.54|
+2012/10/11	|Visa Check Card Purchase	|MOE'S SW GRILL 244FALLS CHURCH	|VA	|$1.88	|$23.66|
+2012/10/11	|Visa Check Card Purchase	|PANERA BREAD #0118ALEXANDRIA	|VA	|$3.45	|$20.21|
+2012/10/12	|Visa Check Card Purchase	|HARRIS TEETER #027FALLS CHURCH	|VA	|$7.56	|$12.65|
+2012/10/13	|Visa Check Card Purchase	|SUBWAY 0001ARLINGTON	|VA	|$9.37	|$3.28|
+2012/10/20	|Visa Check Card Point of Sale Purchase	|THE HOME DEPOT 4640 ALEXANDRIA	|VA	|$12.54	|$164.93|
+2012/10/21	|Visa Check Card Point of Sale Purchase	|BEST BUY #283 FALLS CHURCH	|VA	|$31.49	|$133.44|
+2012/10/21	|Visa Check Card Point of Sale Purchase	|BEST BUY #283 FALLS CHURCH	|VA	|$15.74	|$117.70|
+2012/10/21	|Visa Check Card Purchase	|MOE'S SW GRILL 244FALLS CHURCH	|VA	|$10.46	|$107.24|
+2012/10/21	|Visa Check Card Purchase	|PANERA BREAD #0118ALEXANDRIA	|VA	|$3.45	|$103.79|
+2012/10/21	|Visa Check Card Point of Sale Purchase	|BEST BUY #283 FALLS CHURCH	|VA	|$28.34	|$75.45|
+2012/10/22	|Visa Check Card Purchase	|MOE'S SW GRILL 244FALLS CHURCH	|VA	|$10.47	|$64.98|
+2012/10/22	|Visa Check Card Purchase	|PANERA BREAD #0118ALEXANDRIA	|VA	|$4.45	|$60.53|
+2012/10/23	|Visa Check Card Point of Sale Purchase	|HARRIS TEETER 6351 Colu Falls Church	|VA	|$13.17	|$47.36|
+2012/10/24	|Visa Check Card Purchase	|SUBWAY 0331FALLS CHURCH	|VA	|$4.46	|$42.90|
+2012/10/24	|Visa Check Card Purchase	|PANERA BREAD #0118ALEXANDRIA	|VA	|$2.21	|$40.69|
+2012/10/25	|Visa Check Card Purchase	|SUBWAY 0001ARLINGTON	|VA	|$9.37	|$31.32|
+2012/10/25	|Visa Check Card Purchase	|MOE'S SW GRILL 244FALLS CHURCH	|VA	|$9.01	|$22.31|
+2012/10/25	|Visa Check Card Purchase	|PANERA BREAD #0118ALEXANDRIA	|VA	|$4.45	|$17.86|
+2012/10/26	|Visa Check Card Purchase	|MOE'S SW GRILL 244FALLS CHURCH	|VA	|$9.01	|$8.85|
+2012/10/26	|Visa Check Card Purchase	|PANERA BREAD #989 ARLINGTON	|VA	|$5.74	|$3.11|
 
 
 [![WorksEveryTime](https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://shitday.de/)
