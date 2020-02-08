@@ -1,6 +1,6 @@
 ![Mikes Data Work Git](https://raw.githubusercontent.com/mikesdatawork/images/master/git_mikes_data_work_banner_01.png "Mikes Data Work")
 
-# Financial Data Filtering
+# Financial Data Filtering With Regular Expressions
 
 
 ## Contents
@@ -24,52 +24,60 @@ Regular Expressions listed in order of execution.
 ---
 ## RegEx
 ```Python
-### 1.
-# REMOVE EXTRA 15-CHARACTER ID LINE (#)###############
-#[0-9]{15}
-# REPLACE WITH: 
-<blank>'
 
-### 2.
-# REMOVE ALL EMPTY\BLANK LINES
-^(?:[\t ]*(?:\r?\n|\r))+
-# REPLACE WITH:
+#1.
+#REPLACE 15-CHARACTER ID LINE (#)###############
+#[0-9]{15}
+#REPLACE WITH: 
 <blank>
 
-### 3.
-# ADD YEAR TO THE DATE: MM/DD(/YYYY)
+#2.
+#REMOVE LINE (AND NEXT TWO LINES) IF MATCHING 'Funds Transfer to Brokerage' etc...
+(^.*Funds Transfer to Brokerage.(.+)\R(.+)\R(.+)\R*$)
+#REPLACE WITH:
+<blank>
+
+
+#3.
+#REMOVE ALL EMPTY\BLANK LINES
+^(?:[\t ]*(?:\r?\n|\r))+
+#REPLACE WITH:
+<blank>
+
+#4.
+#ADD YEAR TO THE DATE: MM/DD(/YYYY)
 ([0-9]{2}/[0-9]{2}).*?
-# REPLACE WITH:
+#REPLACE WITH:
 $0/####
 
-### 4.
-# CONVERT DATE MM/DD/YYYY TO YYYY/MM/DD
+#5.
+#CONVERT DATE MM/DD/YYYY TO YYYY/MM/DD
 ([0-9]{2})/([0-9]{2})/([0-9]{4})
-# REPLACE WITH:
+#REPLACE WITH:
 $3/$1/$2,
 
-### 5. 
-# COMBINE 4 LINES
+#6. 
+#COMBINE 4 LINES
 (?-s)^(.+)\R(.+)\R(.+)\R(.+)\R*
-# REPLACE WITH:
+#REPLACE WITH:
 \1, \2, \3, \4 \n
 
-### 6.
-# FIND [US] AND DELETE
+#7.
+#FIND [US] AND DELETE
  (US,\s{1})
-# REPLACE WITH:
+#REPLACE WITH:
 <blank>
 
-### 7.
-# REMOVE LINES WITH THE WORDS "ATM", "DEPOSIT" etc...
+#8.
+#REMOVE LINES WITH THE WORDS "ATM", "DEPOSIT" etc...
 ((^.*Deposit.*$)|(^.*ATM.*$)|(^.*Payroll.*$)|(^.*Transfer.*$)|(^.*Interest.*$)|(^.*Beginning.*$))
-# REPLACE WITH:
+#REPLACE WITH:
 <blank>
 
-### 8.
-# REMOVE ALL EMPTY\BLANK LINES
+#9.
+#REMOVE ALL EMPTY\BLANK LINES
 ^(?:[\t ]*(?:\r?\n|\r))+
-# REPLACE WITH:
+#REPLACE WITH:
 <blank>
 
 
