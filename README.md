@@ -32,8 +32,8 @@ Regular Expressions listed in order of execution.
 <blank>
 
 #2.
-#REMOVE LINE (AND NEXT TWO LINES) IF MATCHING 'Funds Transfer to Brokerage' etc...
-(^.*Funds Transfer to Brokerage.(.+)\R(.+)\R(.+)\R*$)
+#REMOVE LINE (AND NEXT TWO LINES) IF MATCHING 'Funds Transfer to Brokerage' or 'Deposit Mobile' etc...
+((^.*Funds Transfer to Brokerage.(.+)\R(.+)\R(.+)\R*$)|(^.*Deposit Mobile.(.+)\R(.+)\R(.+)\R*$))
 #REPLACE WITH:
 <blank>
 
