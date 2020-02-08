@@ -80,6 +80,12 @@ $3/$1/$2,
 #REPLACE WITH:
 <blank>
 
+#10.
+#DELETE COMMAS BETWEEN TWO NUMBERS (TO AVOID INCORRECT CSV DATA IMPORT)
+\$\d+\K,(?=\d)
+#REPLACE WITH:
+<blank>
+
 
 ```
 
