@@ -1,3 +1,6 @@
+> **Note** — The folder `linguist-samples/` contains tiny real files so GitHub can correctly display all languages used in this repo.  
+> The actual content and examples remain in this README.
+
 ![Mikes Data Work Git](https://raw.githubusercontent.com/mikesdatawork/images/master/git_mikes_data_work_banner_01.png "Mikes Data Work")
 
 # Financial Data Filtering With Regular Expressions
@@ -40,7 +43,8 @@ Regular Expressions listed in order of execution.
 
 #3.
 #REMOVE ALL EMPTY\BLANK LINES
-^(?:[\t ]*(?:\r?\n|\r))+
+^(?:[	 ]*(?:?
+|))+
 #REPLACE WITH:
 <blank>
 
@@ -60,7 +64,8 @@ $3/$1/$2,
 #COMBINE 4 LINES
 (?-s)^(.+)\R(.+)\R(.+)\R(.+)\R*
 #REPLACE WITH:
-\1, \2, \3, \4 \n
+\1, \2, \3, \4 
+
 
 #7.
 #FIND [US] AND DELETE
@@ -76,7 +81,8 @@ $3/$1/$2,
 
 #9.
 #REMOVE ALL EMPTY\BLANK LINES
-^(?:[\t ]*(?:\r?\n|\r))+
+^(?:[	 ]*(?:?
+|))+
 #REPLACE WITH:
 <blank>
 
@@ -148,4 +154,3 @@ $3/$1/$2,
 [![LicenseCCSA](https://img.shields.io/badge/License-CreativeCommonsSA-<COLOR>.svg)](https://creativecommons.org/share-your-work/licensing-types-examples/)
 
 ![Mikes Data Work](https://raw.githubusercontent.com/mikesdatawork/images/master/git_mikes_data_work_banner_02.png "Mikes Data Work")
-
